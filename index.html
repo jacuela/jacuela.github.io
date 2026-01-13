@@ -2,17 +2,109 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina personal</title>
+    <title>Currículum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cv {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        .datos-personales p {
+            margin: 5px 0;
+        }
+
+        .seccion {
+            margin-top: 25px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <h1>Página personal</h1>
-    <h2>Autor: Juan Antonio Cuello Alarcón</h2>
-    <hr>
-    <p id="year_actual"></p>
-    <script>
-        document.getElementById('year_actual').textContent = new Date().getFullYear();
-    </script>
-    
+
+<div class="cv">
+    <header>
+        <h1>Juan Pérez García</h1>
+        <div class="datos-personales">
+            <p><strong>Email:</strong> juanperez@email.com</p>
+            <p><strong>Teléfono:</strong> 600 123 456</p>
+            <p><strong>Dirección:</strong> Murcia, España</p>
+        </div>
+    </header>
+
+    <section class="seccion">
+        <h2>Perfil profesional</h2>
+        <p>
+            Desarrollador web con conocimientos en HTML, CSS, JavaScript y PHP. 
+            Motivado, con ganas de aprender y buena capacidad de trabajo en equipo.
+        </p>
+    </section>
+
+    <section class="seccion">
+        <h2>Formación académica</h2>
+        <ul>
+            <li>
+                <strong>Grado Superior en Desarrollo de Aplicaciones Web</strong><br>
+                IES Ejemplo (2023 - 2025)
+            </li>
+        </ul>
+    </section>
+
+    <section class="seccion">
+        <h2>Experiencia laboral</h2>
+        <ul>
+            <li>
+                <strong>Prácticas como desarrollador web</strong><br>
+                Empresa Ejemplo (2024)
+            </li>
+        </ul>
+    </section>
+
+    <section class="seccion">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML5 y CSS3</li>
+            <li>JavaScript básico</li>
+            <li>PHP y MySQL</li>
+            <li>Trabajo en equipo</li>
+        </ul>
+    </section>
+
+    <div class="footer">
+        Currículum Vitae - 2026
+    </div>
+</div>
+
 </body>
 </html>
